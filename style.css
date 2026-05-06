@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0c10;
+  color: white;
+}
+
+/* TOP BAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.logo {
+  font-weight: bold;
+  color: #7c5cff;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 1;
+  color: #7c5cff;
+}
+
+/* HERO (NETFLIX STYLE) */
+.hero {
+  height: 80vh;
+  background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.3)),
+              url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5") center/cover;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  margin-top: 70px;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.hero p {
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.primary {
+  padding: 10px 20px;
+  background: #7c5cff;
+  border: none;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.ghost {
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+/* ROWS */
+.row {
+  padding: 30px 60px;
+}
+
+.row h2 {
+  margin-bottom: 15px;
+}
+
+/* CAROUSEL */
+.carousel {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+/* CARD (NETFLIX HOVER EFFECT) */
+.card {
+  min-width: 200px;
+  height: 120px;
+  background: #1a1b23;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background: #2a2b3a;
+  border-color: #7c5cff;
+}
+
+.small {
+  height: 90px;
+}
+
+/* LEADERBOARD */
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user {
+  padding: 15px;
+  background: rgba(255,255,255,0.05);
+  border-left: 3px solid #7c5cff;
+}
